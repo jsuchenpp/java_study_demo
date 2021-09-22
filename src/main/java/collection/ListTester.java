@@ -19,6 +19,7 @@ public class ListTester {
     private static void wrongUse() {
         List<String> list = Arrays.asList("Java8", "Java9", "Java10");
         // 会报错，为啥？ Arrays.asList返回的ArrayList是Arrays的静态内部类，没有add方法
+        // 参考资料：https://www.jianshu.com/p/2b113f487e5e
         list.add("Java 11");
         System.out.println(list);
     }
